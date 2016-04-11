@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD11A6131C839FD50022FDFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A6121C839FD50022FDFF /* AppDelegate.swift */; };
+		CD11A6151C839FD50022FDFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A6141C839FD50022FDFF /* ViewController.swift */; };
+		CD11A6181C839FD50022FDFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD11A6161C839FD50022FDFF /* Main.storyboard */; };
+		CD11A61A1C839FD50022FDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD11A6191C839FD50022FDFF /* Assets.xcassets */; };
+		CD11A61D1C839FD50022FDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD11A61B1C839FD50022FDFF /* LaunchScreen.storyboard */; };
+		CD11A6221C839FD50022FDFF /* MyWake WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD11A6211C839FD50022FDFF /* MyWake WatchKit App.app */; };
+		CD11A6281C839FD50022FDFF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD11A6261C839FD50022FDFF /* Interface.storyboard */; };
+		CD11A62A1C839FD50022FDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD11A6291C839FD50022FDFF /* Assets.xcassets */; };
+		CD11A6311C839FD50022FDFF /* MyWake WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD11A6301C839FD50022FDFF /* MyWake WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD11A6361C839FD50022FDFF /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A6351C839FD50022FDFF /* HomeInterfaceController.swift */; };
+		CD11A6381C839FD50022FDFF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A6371C839FD50022FDFF /* ExtensionDelegate.swift */; };
+		CD11A63A1C839FD50022FDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD11A6391C839FD50022FDFF /* Assets.xcassets */; };
+		CD11A64A1C83CE370022FDFF /* ColorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A6491C83CE370022FDFF /* ColorInterfaceController.swift */; };
+		CD11A64C1C83D1DD0022FDFF /* AlarmInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A64B1C83D1DD0022FDFF /* AlarmInterfaceController.swift */; };
+		CD11A64E1C83D2080022FDFF /* MusicInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A64D1C83D2080022FDFF /* MusicInterfaceController.swift */; };
+		CD11A6501C83FC030022FDFF /* LightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11A64F1C83FC030022FDFF /* LightInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD11A6231C839FD50022FDFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD11A6071C839FD50022FDFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD11A6201C839FD50022FDFF;
+			remoteInfo = "MyWake WatchKit App";
+		};
+		CD11A6321C839FD50022FDFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD11A6071C839FD50022FDFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD11A62F1C839FD50022FDFF;
+			remoteInfo = "MyWake WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD11A6411C839FD50022FDFF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD11A6311C839FD50022FDFF /* MyWake WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD11A6451C839FD50022FDFF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CD11A6221C839FD50022FDFF /* MyWake WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD11A60F1C839FD50022FDFF /* MyWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD11A6121C839FD50022FDFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD11A6141C839FD50022FDFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD11A6171C839FD50022FDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD11A6191C839FD50022FDFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD11A61C1C839FD50022FDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD11A61E1C839FD50022FDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD11A6211C839FD50022FDFF /* MyWake WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyWake WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD11A6271C839FD50022FDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CD11A6291C839FD50022FDFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD11A62B1C839FD50022FDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD11A6301C839FD50022FDFF /* MyWake WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyWake WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD11A6351C839FD50022FDFF /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
+		CD11A6371C839FD50022FDFF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CD11A6391C839FD50022FDFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD11A63B1C839FD50022FDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD11A6491C83CE370022FDFF /* ColorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorInterfaceController.swift; sourceTree = "<group>"; };
+		CD11A64B1C83D1DD0022FDFF /* AlarmInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInterfaceController.swift; sourceTree = "<group>"; };
+		CD11A64D1C83D2080022FDFF /* MusicInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInterfaceController.swift; sourceTree = "<group>"; };
+		CD11A64F1C83FC030022FDFF /* LightInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD11A60C1C839FD50022FDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD11A62D1C839FD50022FDFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD11A6061C839FD50022FDFF = {
+			isa = PBXGroup;
+			children = (
+				CD11A6111C839FD50022FDFF /* MyWake */,
+				CD11A6251C839FD50022FDFF /* MyWake WatchKit App */,
+				CD11A6341C839FD50022FDFF /* MyWake WatchKit Extension */,
+				CD11A6101C839FD50022FDFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD11A6101C839FD50022FDFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD11A60F1C839FD50022FDFF /* MyWake.app */,
+				CD11A6211C839FD50022FDFF /* MyWake WatchKit App.app */,
+				CD11A6301C839FD50022FDFF /* MyWake WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD11A6111C839FD50022FDFF /* MyWake */ = {
+			isa = PBXGroup;
+			children = (
+				CD11A6121C839FD50022FDFF /* AppDelegate.swift */,
+				CD11A6141C839FD50022FDFF /* ViewController.swift */,
+				CD11A6161C839FD50022FDFF /* Main.storyboard */,
+				CD11A6191C839FD50022FDFF /* Assets.xcassets */,
+				CD11A61B1C839FD50022FDFF /* LaunchScreen.storyboard */,
+				CD11A61E1C839FD50022FDFF /* Info.plist */,
+			);
+			path = MyWake;
+			sourceTree = "<group>";
+		};
+		CD11A6251C839FD50022FDFF /* MyWake WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CD11A6261C839FD50022FDFF /* Interface.storyboard */,
+				CD11A6291C839FD50022FDFF /* Assets.xcassets */,
+				CD11A62B1C839FD50022FDFF /* Info.plist */,
+			);
+			path = "MyWake WatchKit App";
+			sourceTree = "<group>";
+		};
+		CD11A6341C839FD50022FDFF /* MyWake WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD11A6351C839FD50022FDFF /* HomeInterfaceController.swift */,
+				CD11A6371C839FD50022FDFF /* ExtensionDelegate.swift */,
+				CD11A6391C839FD50022FDFF /* Assets.xcassets */,
+				CD11A63B1C839FD50022FDFF /* Info.plist */,
+				CD11A6491C83CE370022FDFF /* ColorInterfaceController.swift */,
+				CD11A64B1C83D1DD0022FDFF /* AlarmInterfaceController.swift */,
+				CD11A64D1C83D2080022FDFF /* MusicInterfaceController.swift */,
+				CD11A64F1C83FC030022FDFF /* LightInterfaceController.swift */,
+			);
+			path = "MyWake WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD11A60E1C839FD50022FDFF /* MyWake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD11A6461C839FD50022FDFF /* Build configuration list for PBXNativeTarget "MyWake" */;
+			buildPhases = (
+				CD11A60B1C839FD50022FDFF /* Sources */,
+				CD11A60C1C839FD50022FDFF /* Frameworks */,
+				CD11A60D1C839FD50022FDFF /* Resources */,
+				CD11A6451C839FD50022FDFF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD11A6241C839FD50022FDFF /* PBXTargetDependency */,
+			);
+			name = MyWake;
+			productName = MyWake;
+			productReference = CD11A60F1C839FD50022FDFF /* MyWake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD11A6201C839FD50022FDFF /* MyWake WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD11A6421C839FD50022FDFF /* Build configuration list for PBXNativeTarget "MyWake WatchKit App" */;
+			buildPhases = (
+				CD11A61F1C839FD50022FDFF /* Resources */,
+				CD11A6411C839FD50022FDFF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD11A6331C839FD50022FDFF /* PBXTargetDependency */,
+			);
+			name = "MyWake WatchKit App";
+			productName = "MyWake WatchKit App";
+			productReference = CD11A6211C839FD50022FDFF /* MyWake WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CD11A62F1C839FD50022FDFF /* MyWake WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD11A63E1C839FD50022FDFF /* Build configuration list for PBXNativeTarget "MyWake WatchKit Extension" */;
+			buildPhases = (
+				CD11A62C1C839FD50022FDFF /* Sources */,
+				CD11A62D1C839FD50022FDFF /* Frameworks */,
+				CD11A62E1C839FD50022FDFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyWake WatchKit Extension";
+			productName = "MyWake WatchKit Extension";
+			productReference = CD11A6301C839FD50022FDFF /* MyWake WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD11A6071C839FD50022FDFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Patrick Riley";
+				TargetAttributes = {
+					CD11A60E1C839FD50022FDFF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					CD11A6201C839FD50022FDFF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					CD11A62F1C839FD50022FDFF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CD11A60A1C839FD50022FDFF /* Build configuration list for PBXProject "MyWake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD11A6061C839FD50022FDFF;
+			productRefGroup = CD11A6101C839FD50022FDFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD11A60E1C839FD50022FDFF /* MyWake */,
+				CD11A6201C839FD50022FDFF /* MyWake WatchKit App */,
+				CD11A62F1C839FD50022FDFF /* MyWake WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD11A60D1C839FD50022FDFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD11A61D1C839FD50022FDFF /* LaunchScreen.storyboard in Resources */,
+				CD11A61A1C839FD50022FDFF /* Assets.xcassets in Resources */,
+				CD11A6181C839FD50022FDFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD11A61F1C839FD50022FDFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD11A62A1C839FD50022FDFF /* Assets.xcassets in Resources */,
+				CD11A6281C839FD50022FDFF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD11A62E1C839FD50022FDFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD11A63A1C839FD50022FDFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD11A60B1C839FD50022FDFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD11A6151C839FD50022FDFF /* ViewController.swift in Sources */,
+				CD11A6131C839FD50022FDFF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD11A62C1C839FD50022FDFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD11A6381C839FD50022FDFF /* ExtensionDelegate.swift in Sources */,
+				CD11A6361C839FD50022FDFF /* HomeInterfaceController.swift in Sources */,
+				CD11A64E1C83D2080022FDFF /* MusicInterfaceController.swift in Sources */,
+				CD11A64A1C83CE370022FDFF /* ColorInterfaceController.swift in Sources */,
+				CD11A6501C83FC030022FDFF /* LightInterfaceController.swift in Sources */,
+				CD11A64C1C83D1DD0022FDFF /* AlarmInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD11A6241C839FD50022FDFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD11A6201C839FD50022FDFF /* MyWake WatchKit App */;
+			targetProxy = CD11A6231C839FD50022FDFF /* PBXContainerItemProxy */;
+		};
+		CD11A6331C839FD50022FDFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD11A62F1C839FD50022FDFF /* MyWake WatchKit Extension */;
+			targetProxy = CD11A6321C839FD50022FDFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD11A6161C839FD50022FDFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD11A6171C839FD50022FDFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD11A61B1C839FD50022FDFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD11A61C1C839FD50022FDFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD11A6261C839FD50022FDFF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD11A6271C839FD50022FDFF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD11A63C1C839FD50022FDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD11A63D1C839FD50022FDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD11A63F1C839FD50022FDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MyWake WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = patrickriley.MyWake.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		CD11A6401C839FD50022FDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MyWake WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = patrickriley.MyWake.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		CD11A6431C839FD50022FDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MyWake_WatchKit_Extension;
+				INFOPLIST_FILE = "MyWake WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = patrickriley.MyWake.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		CD11A6441C839FD50022FDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MyWake_WatchKit_Extension;
+				INFOPLIST_FILE = "MyWake WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = patrickriley.MyWake.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		CD11A6471C839FD50022FDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyWake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = patrickriley.MyWake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD11A6481C839FD50022FDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyWake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = patrickriley.MyWake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD11A60A1C839FD50022FDFF /* Build configuration list for PBXProject "MyWake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD11A63C1C839FD50022FDFF /* Debug */,
+				CD11A63D1C839FD50022FDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD11A63E1C839FD50022FDFF /* Build configuration list for PBXNativeTarget "MyWake WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD11A63F1C839FD50022FDFF /* Debug */,
+				CD11A6401C839FD50022FDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD11A6421C839FD50022FDFF /* Build configuration list for PBXNativeTarget "MyWake WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD11A6431C839FD50022FDFF /* Debug */,
+				CD11A6441C839FD50022FDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD11A6461C839FD50022FDFF /* Build configuration list for PBXNativeTarget "MyWake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD11A6471C839FD50022FDFF /* Debug */,
+				CD11A6481C839FD50022FDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD11A6071C839FD50022FDFF /* Project object */;
+}

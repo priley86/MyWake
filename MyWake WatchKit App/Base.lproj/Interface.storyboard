@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--MyWake-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="MyWake" id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="MyWake_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" spacing="0.0" id="ref-he-s5m">
+                            <items>
+                                <group width="0.5" height="1" alignment="left" layout="vertical" id="7aM-7S-zxL">
+                                    <items>
+                                        <button alignment="center" id="Y3N-Ss-4qp">
+                                            <group key="contentGroup" width="45" height="45" alignment="left" id="KPH-DV-wWM">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="light" id="5kX-ou-rui"/>
+                                                </items>
+                                                <color key="backgroundColor" red="1" green="0.93827363470000003" blue="0.077011127159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <segue destination="hTn-XE-GoJ" kind="push" id="npD-Lz-LVh"/>
+                                            </connections>
+                                        </button>
+                                        <label height="19" alignment="center" text="Light" id="eRd-lc-ZX6"/>
+                                    </items>
+                                </group>
+                                <group width="0.5" height="1" alignment="left" layout="vertical" id="0me-9X-DmM">
+                                    <items>
+                                        <button alignment="center" id="qqo-v6-UXQ">
+                                            <group key="contentGroup" width="45" height="45" alignment="left" id="AI0-v7-IkN">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="color" id="N7f-LQ-Ma9"/>
+                                                </items>
+                                                <color key="backgroundColor" red="1" green="0.64113105520000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <segue destination="prV-cF-djx" kind="push" id="ruO-aM-grD"/>
+                                            </connections>
+                                        </button>
+                                        <label height="19" alignment="center" text="Color" id="q1g-DR-jfA"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="x7G-05-WZM">
+                            <items>
+                                <group width="0.5" height="1" alignment="left" layout="vertical" id="flY-YF-v9J">
+                                    <items>
+                                        <button alignment="center" id="zCF-ci-cyr">
+                                            <group key="contentGroup" width="45" height="45" alignment="left" id="Bzn-Sl-cQK">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="alarm" id="QyS-0j-acY"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.2186296512" green="0.38316259209999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <segue destination="7ed-4d-byH" kind="push" id="saD-Av-zDi"/>
+                                            </connections>
+                                        </button>
+                                        <label height="19" alignment="center" text="Alarm" id="4TJ-ul-MA7"/>
+                                    </items>
+                                </group>
+                                <group width="0.5" height="1" alignment="left" layout="vertical" id="Fpg-Jn-kLB">
+                                    <items>
+                                        <button alignment="center" id="Nos-Hf-dcJ">
+                                            <group key="contentGroup" width="45" height="45" alignment="left" id="ncC-Kb-tJs">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="music" id="Ju5-VX-jKI"/>
+                                                </items>
+                                                <color key="backgroundColor" red="1" green="0.34797518300000002" blue="0.80703219530000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <segue destination="axV-RR-XAQ" kind="push" id="wlc-k6-wxe"/>
+                                            </connections>
+                                        </button>
+                                        <label height="19" alignment="center" text="Music" id="LB0-1V-hAU"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="alarmBtn" destination="zCF-ci-cyr" id="98n-lP-4KD"/>
+                        <outlet property="colorBtn" destination="qqo-v6-UXQ" id="h4e-5R-DmX"/>
+                        <outlet property="lightBtn" destination="Y3N-Ss-4qp" id="UCj-H7-Apb"/>
+                        <outlet property="musicBtn" destination="Nos-Hf-dcJ" id="AUW-8E-UM2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="135" y="346"/>
+        </scene>
+        <!--Color-->
+        <scene sceneID="Z55-MW-37M">
+            <objects>
+                <controller title="Color" id="prV-cF-djx" customClass="ColorInterfaceController" customModule="MyWake_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="8HY-4n-g7e">
+                            <items>
+                                <label alignment="center" text="Start:" textAlignment="justified" id="Xg1-vc-Z6W"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="zzR-6s-U5L">
+                            <items>
+                                <button alignment="left" id="g7J-bI-qaf">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="Iui-MQ-wgt">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="hjb-5y-FEc"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.93827363470000003" blue="0.077011127159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="yellowStartPress" destination="prV-cF-djx" id="lfK-c8-ZkW"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="1LK-1I-Yg1">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="eMh-Ty-QxV">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="O0g-M4-kLt"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.64113105520000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="orangeStartPress" destination="prV-cF-djx" id="9UH-54-Q4Z"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="fun-dV-cAZ">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="OjQ-Zx-ZpK">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="xxH-WE-41G"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.34797518300000002" blue="0.80703219530000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="pinkStartPress" destination="prV-cF-djx" id="88Z-X9-qOJ"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="G41-Zv-8hn">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="XP0-b5-Xaf">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="zb3-Wx-pyi"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="tealStartPress" destination="prV-cF-djx" id="XT7-YI-WFF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="BjD-9F-CQa">
+                            <items>
+                                <label alignment="center" text="End:" id="J1y-fW-Vnm"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="oPJ-8s-M07">
+                            <items>
+                                <button alignment="left" id="dbe-1L-gNd">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="RaO-V8-gPO">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="Pmq-lN-Duy"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="tealEndPress" destination="prV-cF-djx" id="WHl-zj-6UG"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="Jat-zc-nZH">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="S0w-o3-upk">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="Jzn-hI-KvA"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.34797518300000002" blue="0.80703219530000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="pinkEndPress" destination="prV-cF-djx" id="uJ8-Kn-Fdl"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="i4c-2T-srx">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="Zxm-KI-zuN">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="nbb-Mf-IBU"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.64113105520000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="orangeEndPress" destination="prV-cF-djx" id="ccw-4s-S9y"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="7mi-Au-ZJG">
+                                    <group key="contentGroup" width="0.25" height="30" alignment="left" id="rpi-ez-WpV">
+                                        <items>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="L5d-hC-m05"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.93827363470000003" blue="0.077011127159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="yellowEndPress" destination="prV-cF-djx" id="8bu-RL-IgD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="4" bottom="0.0"/>
+                    <connections>
+                        <outlet property="orangeBtnEnd" destination="i4c-2T-srx" id="K8q-aS-RVV"/>
+                        <outlet property="orangeBtnStart" destination="1LK-1I-Yg1" id="egg-xQ-80Q"/>
+                        <outlet property="orangeEndImage" destination="nbb-Mf-IBU" id="cSM-Eo-VTX"/>
+                        <outlet property="orangeStartImage" destination="O0g-M4-kLt" id="qpQ-md-bJK"/>
+                        <outlet property="pinkBtnEnd" destination="Jat-zc-nZH" id="Zeq-FD-vb0"/>
+                        <outlet property="pinkBtnStart" destination="fun-dV-cAZ" id="zXi-gm-GUX"/>
+                        <outlet property="pinkEndImage" destination="Jzn-hI-KvA" id="tMl-X4-oyG"/>
+                        <outlet property="pinkStartImage" destination="xxH-WE-41G" id="Ib2-qo-rv5"/>
+                        <outlet property="tealBtnEnd" destination="dbe-1L-gNd" id="pPg-1m-mBP"/>
+                        <outlet property="tealBtnStart" destination="G41-Zv-8hn" id="28i-TG-gKc"/>
+                        <outlet property="tealEndImage" destination="Pmq-lN-Duy" id="YQ3-es-sXF"/>
+                        <outlet property="tealStartImage" destination="zb3-Wx-pyi" id="osm-oZ-ImU"/>
+                        <outlet property="yellowBtnEnd" destination="7mi-Au-ZJG" id="wpa-dD-wTj"/>
+                        <outlet property="yellowBtnStart" destination="g7J-bI-qaf" id="hNG-Qf-mkO"/>
+                        <outlet property="yellowEndImage" destination="L5d-hC-m05" id="f0d-zv-wxi"/>
+                        <outlet property="yellowStartImage" destination="hjb-5y-FEc" id="1m2-rU-823"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="392" y="173"/>
+        </scene>
+        <!--Alarm-->
+        <scene sceneID="Usu-gz-WIS">
+            <objects>
+                <controller title="Alarm" id="7ed-4d-byH" customClass="AlarmInterfaceController" customModule="MyWake_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="I9c-X0-WOk">
+                            <items>
+                                <label alignment="center" text="Start:" id="CDh-Ry-q1R"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="Ifh-SQ-wnX">
+                            <items>
+                                <group width="0.33000000000000002" height="40" alignment="left" id="kLw-YU-cul">
+                                    <items>
+                                        <picker height="1" alignment="left" id="Luv-hR-fhR">
+                                            <connections>
+                                                <action selector="startHourChanged:" destination="7ed-4d-byH" id="KjD-l0-KCi"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <group width="0.33000000000000002" height="40" alignment="left" id="R18-In-asJ">
+                                    <items>
+                                        <picker height="1" alignment="left" id="UOZ-4A-qeu">
+                                            <connections>
+                                                <action selector="startMinuteChanged:" destination="7ed-4d-byH" id="qPE-ng-L4j"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <group width="0.33000000000000002" height="40" alignment="left" id="h5F-Dm-1qT">
+                                    <items>
+                                        <picker height="1" alignment="left" id="eJL-01-3Ux">
+                                            <connections>
+                                                <action selector="startAmPmChanged:" destination="7ed-4d-byH" id="bng-aL-cBu"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="nHf-8H-UCi">
+                            <items>
+                                <label alignment="center" text="End:" id="QiZ-ZR-x5R"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="4jh-H7-eba">
+                            <items>
+                                <group width="0.33000000000000002" height="40" alignment="left" id="RRU-o3-NAG">
+                                    <items>
+                                        <picker height="1" alignment="left" id="foq-s2-kmn">
+                                            <connections>
+                                                <action selector="endHourChanged:" destination="7ed-4d-byH" id="Jjd-vL-Ki0"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <group width="0.33000000000000002" height="40" alignment="left" id="gi5-mx-bGW">
+                                    <items>
+                                        <picker height="1" alignment="left" id="gJU-ma-XiB">
+                                            <connections>
+                                                <action selector="endMinuteChanged:" destination="7ed-4d-byH" id="4VS-js-aoP"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <group width="0.33000000000000002" height="40" alignment="left" id="F1f-DB-y1D">
+                                    <items>
+                                        <picker height="1" alignment="left" id="TjY-99-X73">
+                                            <connections>
+                                                <action selector="endAmPmChanged:" destination="7ed-4d-byH" id="0fC-I8-d07"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="alarmEndAmPm" destination="TjY-99-X73" id="fAk-gA-lJj"/>
+                        <outlet property="alarmEndHour" destination="foq-s2-kmn" id="ddv-lF-uJS"/>
+                        <outlet property="alarmEndMinute" destination="gJU-ma-XiB" id="Hqb-LW-Kvt"/>
+                        <outlet property="alarmStartAmPm" destination="eJL-01-3Ux" id="g9q-R0-vyo"/>
+                        <outlet property="alarmStartHour" destination="Luv-hR-fhR" id="GOb-pT-t6K"/>
+                        <outlet property="alarmStartMinute" destination="UOZ-4A-qeu" id="Xzk-ji-9uu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="390" y="395"/>
+        </scene>
+        <!--Light-->
+        <scene sceneID="Tfn-Vz-LGh">
+            <objects>
+                <controller title="Light" id="hTn-XE-GoJ" customClass="LightInterfaceController" customModule="MyWake_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="8Ft-sN-Leo">
+                            <items>
+                                <label alignment="center" text="Start:" id="udm-Oh-K1g"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="iuI-9h-Eyv">
+                            <items>
+                                <slider width="1" alignment="left" value="1" maximum="19" steps="19" id="kjO-Ei-O0y">
+                                    <connections>
+                                        <action selector="lightStartChanged:" destination="hTn-XE-GoJ" id="BIK-kj-BEG"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="SSj-ic-yf3">
+                            <items>
+                                <label alignment="center" text="End:" id="oA2-3F-Yfw"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="FGm-St-cGT">
+                            <items>
+                                <slider width="1" alignment="left" value="1" maximum="19" steps="19" id="qNg-Gf-elp">
+                                    <connections>
+                                        <action selector="lightEndChanged:" destination="hTn-XE-GoJ" id="4HD-7C-gap"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lightEndSlider" destination="qNg-Gf-elp" id="2gl-8a-nXR"/>
+                        <outlet property="lightStartSlider" destination="kjO-Ei-O0y" id="SLM-9Z-ZE9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="135" y="629"/>
+        </scene>
+        <!--Music-->
+        <scene sceneID="P6r-vi-Oaz">
+            <objects>
+                <controller title="Music" id="axV-RR-XAQ" customClass="MusicInterfaceController" customModule="MyWake_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="gBc-g9-kfV">
+                            <items>
+                                <label alignment="center" text="Song:" id="ZJA-lC-h3E"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="Sxn-MD-mov">
+                            <items>
+                                <picker height="100" alignment="left" focusStyle="sequence" id="Yy7-kO-XPi">
+                                    <connections>
+                                        <action selector="songChanged:" destination="axV-RR-XAQ" id="rvt-1V-3T5"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="songPicker" destination="Yy7-kO-XPi" id="X3e-lC-4Oj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="311" y="624"/>
+        </scene>
+    </scenes>
+</document>
