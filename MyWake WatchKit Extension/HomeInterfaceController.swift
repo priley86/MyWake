@@ -12,11 +12,6 @@ import Foundation
 
 class HomeInterfaceController: WKInterfaceController {
 
-    @IBOutlet var lightBtn: WKInterfaceButton!
-    @IBOutlet var colorBtn: WKInterfaceButton!
-    @IBOutlet var alarmBtn: WKInterfaceButton!
-    @IBOutlet var musicBtn: WKInterfaceButton!
-    
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -26,6 +21,7 @@ class HomeInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
     }
 
     override func didDeactivate() {

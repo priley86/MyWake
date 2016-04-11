@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
@@ -17,7 +17,7 @@
                                         <button alignment="center" id="Y3N-Ss-4qp">
                                             <group key="contentGroup" width="45" height="45" alignment="left" id="KPH-DV-wWM">
                                                 <items>
-                                                    <imageView alignment="center" verticalAlignment="center" image="light" id="5kX-ou-rui"/>
+                                                    <imageView alignment="center" verticalAlignment="center" image="light" animationDuration="2" id="5kX-ou-rui"/>
                                                 </items>
                                                 <color key="backgroundColor" red="1" green="0.93827363470000003" blue="0.077011127159999998" alpha="1" colorSpace="calibratedRGB"/>
                                             </group>
@@ -33,7 +33,7 @@
                                         <button alignment="center" id="qqo-v6-UXQ">
                                             <group key="contentGroup" width="45" height="45" alignment="left" id="AI0-v7-IkN">
                                                 <items>
-                                                    <imageView alignment="center" verticalAlignment="center" image="color" id="N7f-LQ-Ma9"/>
+                                                    <imageView alignment="center" verticalAlignment="center" image="color" animationDuration="2" id="N7f-LQ-Ma9"/>
                                                 </items>
                                                 <color key="backgroundColor" red="1" green="0.64113105520000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </group>
@@ -54,7 +54,7 @@
                                         <button alignment="center" id="zCF-ci-cyr">
                                             <group key="contentGroup" width="45" height="45" alignment="left" id="Bzn-Sl-cQK">
                                                 <items>
-                                                    <imageView alignment="center" verticalAlignment="center" image="alarm" id="QyS-0j-acY"/>
+                                                    <imageView alignment="center" verticalAlignment="center" image="alarm" animationDuration="2" id="QyS-0j-acY"/>
                                                 </items>
                                                 <color key="backgroundColor" red="0.2186296512" green="0.38316259209999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </group>
@@ -70,7 +70,7 @@
                                         <button alignment="center" id="Nos-Hf-dcJ">
                                             <group key="contentGroup" width="45" height="45" alignment="left" id="ncC-Kb-tJs">
                                                 <items>
-                                                    <imageView alignment="center" verticalAlignment="center" image="music" id="Ju5-VX-jKI"/>
+                                                    <imageView alignment="center" verticalAlignment="center" image="music" animationDuration="2" id="Ju5-VX-jKI"/>
                                                 </items>
                                                 <color key="backgroundColor" red="1" green="0.34797518300000002" blue="0.80703219530000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </group>
@@ -87,9 +87,14 @@
                     </items>
                     <connections>
                         <outlet property="alarmBtn" destination="zCF-ci-cyr" id="98n-lP-4KD"/>
+                        <outlet property="alarmBtnImage" destination="QyS-0j-acY" id="Y85-d9-MGs"/>
                         <outlet property="colorBtn" destination="qqo-v6-UXQ" id="h4e-5R-DmX"/>
+                        <outlet property="colorBtnImage" destination="N7f-LQ-Ma9" id="K7d-f4-01O"/>
                         <outlet property="lightBtn" destination="Y3N-Ss-4qp" id="UCj-H7-Apb"/>
+                        <outlet property="lightBtnGroup" destination="7aM-7S-zxL" id="GDB-td-yrJ"/>
+                        <outlet property="lightBtnImage" destination="5kX-ou-rui" id="C2N-Ih-jvc"/>
                         <outlet property="musicBtn" destination="Nos-Hf-dcJ" id="AUW-8E-UM2"/>
+                        <outlet property="musicBtnImage" destination="Ju5-VX-jKI" id="2ZR-zd-Z8T"/>
                     </connections>
                 </controller>
             </objects>
@@ -144,7 +149,7 @@
                                 <button alignment="left" id="G41-Zv-8hn">
                                     <group key="contentGroup" width="0.25" height="30" alignment="left" id="XP0-b5-Xaf">
                                         <items>
-                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" id="zb3-Wx-pyi"/>
+                                            <imageView width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" animationDuration="2" id="zb3-Wx-pyi"/>
                                         </items>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
